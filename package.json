@@ -1,0 +1,29 @@
+{
+  "name": "rdg-drupal-js-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pianomansam/rdg-drupal-js-lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pianomansam/rdg-drupal-js-lib/issues"
+  },
+  "homepage": "https://github.com/pianomansam/rdg-drupal-js-lib#readme",
+  "dependencies": {
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rollup-each": "^3.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "path": "^0.12.7"
+  }
+}
