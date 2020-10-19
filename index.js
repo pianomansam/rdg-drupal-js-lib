@@ -4,10 +4,10 @@ const rollup = require('gulp-rollup-each');
 const { babel } = require('@rollup/plugin-babel');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
-const util = require('gulp-util');
 const uglify = require('gulp-uglify');
+const noop = require("gulp-noop");
 
-const production = !!util.env.production;
+const production = process.env.NODE_ENV !== 'development';
 
 const jsCompile = (src, dest) =>
   gulp
@@ -34,7 +34,7 @@ const jsCompile = (src, dest) =>
     )
     .pipe(
       !production
-        ? util.noop() // eslint-disable-next-line
+        ? noop() // eslint-disable-next-line
         : uglify({ mangle: false }).on('error', function (e) {
             const message =
               'Javascript minification (gulp-uglify) has failed. Likely due to javascript errors listed above.';

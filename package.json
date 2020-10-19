@@ -21,9 +21,9 @@
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "gulp": "^4.0.2",
+    "gulp-noop": "^1.0.1",
     "gulp-rollup-each": "^3.0.2",
     "gulp-uglify": "^3.0.2",
-    "gulp-util": "^3.0.8",
     "path": "^0.12.7"
   }
 }
