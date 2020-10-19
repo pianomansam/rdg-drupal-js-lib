@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pianomansam/rdg-drupal-js-lib#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.12.1",
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
